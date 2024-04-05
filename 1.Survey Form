@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Elections Survey Form</title>
+        <link href="1.Survey Form_CSS" rel="stylesheet"/>
+<body>
+<main>
+ <h1 id="title">Elections Survey Form</h1>
+ <p id="description">Thank you for taking this time asnwer this amazing survey!</p>
+ <section>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required></label>
+            <label for="email" id="email-label">Email<input id="email" type="email" placeholder="Enter your mail"required></label>
+            <label for="number" id="number-label">Age(optional)<input id="number" type="number" placeholder="Age" min="10" max="100"> </label>
+        <fieldset>
+            <legend>In which candidates to prime-minister you trust the most?</legend>
+            <select id="dropdown">
+                <option value="">Select and option</option>
+                <option value="1">Luís Montenegro</option>
+                <option value="2">Pedro Nunu</option>
+                <option value="3">André Ventura</option>
+                <option value="4">Mariana Mortágua</option>
+                <option value="5">Rui Rocha</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>In which party you will vote?</legend>
+            <label for="ps"><input type="radio" name="party" value="ps" id="ps" checked> PS</label>
+            <label for="chega"><input type="radio" name="party" value="chega" id="chega"> Chega</label>
+            <label for="ad"><input type="radio" name="party" value="ad" id="ad"> Aliança Democrática</label>
+            <label for="be"><input type="radio" name="party" value="be" id="be"> BE</label>
+        </fieldset>
+        <fieldset>
+            <legend>What do you think are the problems of the country?</legend><legend>(Select all that apply)</legend>
+            <label for="corruption"></label><input id="corruption" type="checkbox" value="corruption" name="problems"> Corruption</label>
+            <label for="costinha"></label><input id="costinha" type="checkbox" value="pedro-nunu" name="problems"> Pedro Nunu</label>
+            <label for="ps"></label><input id="ps" type="checkbox" value="ps" name="problems"> PS</label>
+            <label for="cheganos"><input id="cheganos" type="checkbox" value="cheganos" name="problems"> Cheganos</label>
+            <label for="esquerdalha"><input id="esquerdalha" type="checkbox" value="esquerdalha" name="problems"> Esquerdalha</label>
+        </fieldset>
+        <fieldset>
+            <legend>Any comments on what are the strong features of the leader chosen?</legend>
+            <label for="suggestions"><textarea id="suggestions" placeholder="Enter your comment here"></textarea></label>
+        </fieldset>
+            <button type="submit" id="submit">Submit</button>
+    </form>
+ </section>
+</main>
+</body>
